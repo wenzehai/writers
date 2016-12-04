@@ -1,6 +1,9 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
 	margin:0;padding:0
 }
+* a {
+	text-decoration: none;
+}
 body {
 	font-family: 'Arial',sans-serif;
 	font-size: 16px;
@@ -8,32 +11,188 @@ body {
 	line-height: 1.6;
 	color: #222;
 }
-.site-header {
-	position: relative;
+.header {
+	/*background: pink;*/
+	height: 135px;
 	margin: 0 auto;
 	width: 1140px;
 }
-.logo {
-	float: left;
+.header .site-header {
+	width: 1140px;
+	height: 99px;
 }
-.logo h1 {
-	font-size: 48px;
+.header .site-header .logo {
+	float: left;
+	width: 380px;
+	height: 99px;
+}
+.header .site-header .logo p {
+	font-size: 50px;
 	color: #007cbb;
 }
-.info {
+.header .site-header .info {
 	float: right;
+	width: 760px;
+	height: 79px;
+	padding: 5px 0;
+}
+.header .site-header .info .info-top {
+	width: 760px;
+	height: 34px;
+}
+.header .site-header .info .info-top ul {
+	width: 760px;
+	height: 34px;
+	list-style: none;
+	display: block;
+	box-sizing: border-box;
+	padding-left: 400px;
+}
+.header .site-header .info .info-top ul li {
+	float: left;
+	/*background: #333;*/
+	line-height: 20px;
+}
+.header .site-header .info .info-top ul li a {
+	color: #333;
+	font-size: 14px;
+	display: block;
+	line-height: 34px;
+	padding: 0 15px;
+}
+.header .site-header .info .info-follow {
+	width: 760px;
+	height: 45px;
+	display: block;
+	box-sizing: border-box;
+}
+.header .site-header .info .info-follow  {
+	text-align: right;
+	padding-right: 10px;
+}
+/*------------------*/
+.site-nav {
+	background: #fff;
+	width: 1140px;
+	height: 35px;
+}
+.site-nav ul {
+/*	background: #666;
+*/	width: 1140px;
+	height: 35px;
+	/*display: block;*/
+	box-sizing: border-box;
+	list-style: none;
+	border-top: 2px solid gray;
+	border-bottom: 1px solid gray;
+}
+.site-nav ul li {
+	/*display: block;*/
+	float: left;
+	margin-right: 5px;
+}
+.site-nav ul li a {
+	font-size: 14px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 15px;
+}
+/*--------------content----------------*/
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	height: 1383px;
+	/*background: #999;*/
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.container .content {
+	width: 750px;
+	height: 1343px;
+	/*background: pink;*/
+	float: left;
+}
+.container .content img {
+	margin-bottom: 12px;
+}
+.container .content h2 {
+	margin: 0 0 16px;
+}
+.container .content p {
+	margin: 0 0 16px;
+}
+/*-------right---------*/
+.container .right {
+	width: 360px;
+	height: 1383px;
+	background: blue;
+	float: right;
+}
+.container .right .menu-right {
+	width: 360px;
+	height: 803px;
+	background: #f0f0f0;
+	padding: 20px;
+}
+.container .right .menu-right .black {
+	width: 320px;
+	height: 39px;
 	
 }
-.info-top {
-	background: red;
+.container .right .menu-right h2 {
+	line-height: 19px;
+	/*padding: 10px;*/
+	margin-bottom: 24px;
+	background: #000;
+	color: #fff;
+	display: block;
+	width: 300px;
+	height: 
 }
-.info-top ul {
-	width: 350px;
+.container .right .menu-right ul {
+	list-style: none;
+
+}
+.container .right .menu-right ul li {
+	line-height: 40px;
+	border-bottom: 1px solid gray;
+}
+.container .right .faq {
+	width: 360px;
+	height: 479px;
+	background: #f0f0f0;
+}
+
+
+
+
+/*----------footer------------*/
+.footer {
+
+	height: 155px;
+	background: #222;
+}
+.footer .btm-menu {
+	margin: 0 auto;
+	width: 1140px;
+	height: 95px;
+	/*background: pink;*/
+	border-bottom: 1px solid #666;
+}
+.footer .btm-menu ul {
+	width: 1140px;
+	height: 95px;
+	display: block;
+	box-sizing: border-box;
 	list-style: none;
 }
-.info-top ul li {
-	/*float: left;*/
+.footer .btm-menu ul li {
+	float: left;
+	line-height: 95px;
+	padding-left: 1em;
 }
-.info-follow {
-	background: blue;
+.footer .cpr {
+	line-height: 60px;
+	text-align: center;
+	color: #aaa;
 }
