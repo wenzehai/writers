@@ -1,0 +1,39 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+	margin:0;padding:0
+}
+body {
+	font-family: 'Arial',sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #222;
+}
+.site-header {
+	position: relative;
+	margin: 0 auto;
+	width: 1140px;
+}
+.logo {
+	float: left;
+}
+.logo h1 {
+	font-size: 48px;
+	color: #007cbb;
+}
+.info {
+	float: right;
+	
+}
+.info-top {
+	background: red;
+}
+.info-top ul {
+	width: 350px;
+	list-style: none;
+}
+.info-top ul li {
+	/*float: left;*/
+}
+.info-follow {
+	background: blue;
+}
