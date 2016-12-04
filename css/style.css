@@ -91,6 +91,7 @@ body {
 	float: left;
 	margin-right: 5px;
 }
+
 .site-nav ul li a {
 	font-size: 14px;
 	text-decoration: none;
@@ -124,8 +125,8 @@ body {
 /*-------right---------*/
 .container .right {
 	width: 360px;
-	height: 1383px;
-	background: blue;
+	/*height: 1383px;*/
+	/*background: blue;*/
 	float: right;
 }
 .container .right .menu-right {
@@ -133,39 +134,84 @@ body {
 	height: 803px;
 	background: #f0f0f0;
 	padding: 20px;
-}
-.container .right .menu-right .black {
-	width: 320px;
-	height: 39px;
-	
+	box-sizing: border-box;
+	overflow: auto;
 }
 .container .right .menu-right h2 {
-	line-height: 19px;
-	/*padding: 10px;*/
-	margin-bottom: 24px;
 	background: #000;
 	color: #fff;
-	display: block;
 	width: 300px;
-	height: 
+	height: 40px;
+	padding-left: 10px;
+	box-sizing: border-box;
 }
 .container .right .menu-right ul {
 	list-style: none;
 
 }
 .container .right .menu-right ul li {
-	line-height: 40px;
+	line-height: 25px;
 	border-bottom: 1px solid gray;
+}
+.container .right .menu-right ul li a {
+	color: #007cbb;
+	font-weight: 600;
+}
+.container .right .menu-right ul li span {
+	color: #222;
+}
+.container .right .menu-right ul li h3 {
+	font-size: 16px;
+	color: #222;
+	font-weight: 600;
+	padding-top:20px;
+	padding-bottom: 5px;
 }
 .container .right .faq {
 	width: 360px;
 	height: 479px;
 	background: #f0f0f0;
 }
+/*------------------------*/
+.container .right .faq {
+	margin-top: 20px;
+	width: 360px;
+	height: 480px;
+	background: #f0f0f0;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.container .right .faq .top h2, .container .right .faq .bottom h2{
+	color: #222;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: 600px;
+	line-height: 20px;
 
+}
+.container .right .faq .top p, .container .right .faq .bottom p {
+	color: #222;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-weight: 400px;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.container .right .faq .top input[type="submit"], .container .right .faq .bottom input[type="submit"]{
+	width: 135px;
+	height: 60px;
+	border: 2px solid #007cbb;
+	/*font-size: 18px;*/
+	color: #007cbb;
+	background: #f0f0f0;
+}
+.container .right .faq .bottom {
+	margin-top: 20px;
+	width: 360px;
+	background: #f0f0f0;
 
-
-
+}
 /*----------footer------------*/
 .footer {
 
@@ -190,9 +236,19 @@ body {
 	float: left;
 	line-height: 95px;
 	padding-left: 1em;
+	font-size: 14px;
+	font-weight: 400;
 }
+.footer .btm-menu ul li a {
+	color: #78b74e;
+}
+
 .footer .cpr {
 	line-height: 60px;
 	text-align: center;
 	color: #aaa;
+	font-size: 14px;
+}
+.footer .cpr a {
+	color: #78b74e;
 }
